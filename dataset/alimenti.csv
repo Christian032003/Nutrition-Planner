@@ -1,0 +1,36 @@
+alimento,categoria,pasti,kcal_100g,proteine_100g,carboidrati_100g,grassi_100g
+Avena,carboidrato,colazione|spuntino,389,16.9,66.3,6.9
+Pane integrale,carboidrato,colazione|pranzo|cena,247,13.0,41.0,4.2
+Riso basmati cotto,carboidrato,pranzo|cena,130,2.7,28.2,0.3
+Pasta integrale cotta,carboidrato,pranzo,124,5.0,26.0,0.8
+Patate bollite,carboidrato,pranzo|cena,87,1.9,20.1,0.1
+Banana,carboidrato,colazione|spuntino,89,1.1,22.8,0.3
+Yogurt greco 0%,proteina,colazione|spuntino,59,10.3,3.6,0.4
+Uova,proteina,colazione|cena,143,12.6,0.7,9.5
+Petto di pollo,proteina,pranzo|cena,165,31.0,0.0,3.6
+Tonno al naturale,proteina,pranzo|cena,116,25.5,0.0,0.8
+Salmone,proteina,pranzo|cena,208,20.0,0.0,13.0
+Tofu,proteina,pranzo|cena,76,8.0,1.9,4.8
+Legumi cotti,misto,pranzo|cena,116,9.0,20.0,0.4
+Mandorle,grasso,colazione|spuntino,579,21.2,21.6,49.9
+Olio extravergine oliva,grasso,pranzo|cena,884,0.0,0.0,100.0
+Avocado,grasso,pranzo|cena,160,2.0,8.5,14.7
+Verdure miste,verdura,pranzo|cena,35,2.0,5.0,0.4
+Mela,carboidrato,colazione|spuntino,52,0.3,14.0,0.2
+Fiocchi di latte,proteina,colazione|spuntino|cena,98,11.1,3.4,4.3
+Skyr,proteina,colazione|spuntino,63,11.0,4.0,0.2
+Latte parzialmente scremato,proteina,colazione,46,3.4,4.8,1.5
+Tacchino,proteina,pranzo|cena,135,29.0,0.0,2.0
+Merluzzo,proteina,pranzo|cena,82,18.0,0.0,0.7
+Bresaola,proteina,pranzo|cena|spuntino,151,32.0,0.0,2.6
+Lenticchie cotte,misto,pranzo|cena,116,9.0,20.1,0.4
+Quinoa cotta,carboidrato,pranzo|cena,120,4.4,21.3,1.9
+Farro cotto,carboidrato,pranzo|cena,127,5.0,26.0,1.0
+Riso venere cotto,carboidrato,pranzo|cena,145,3.5,31.0,1.0
+Kiwi,carboidrato,colazione|spuntino,61,1.1,15.0,0.5
+Arancia,carboidrato,colazione|spuntino,47,0.9,11.8,0.1
+Noci,grasso,colazione|spuntino,654,15.2,13.7,65.2
+Burro di arachidi,grasso,colazione|spuntino,588,25.0,20.0,50.0
+Semi di chia,grasso,colazione|spuntino,486,16.5,42.1,30.7
+Zucchine,verdura,pranzo|cena,17,1.2,3.1,0.3
+Spinaci,verdura,pranzo|cena,23,2.9,3.6,0.4

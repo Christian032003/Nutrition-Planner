@@ -1,0 +1,4 @@
+Ricerca
+=======
+
+Pagina statica di ricerca della documentazione HTML.

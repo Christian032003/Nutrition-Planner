@@ -1,0 +1,4 @@
+Confronto con l'indice originale
+================================
+
+Pagina di allineamento tra la documentazione originale e la versione aggiornata.

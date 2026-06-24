@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nutrition_planner module &mdash; Nutrition Planner 1.0.0 documentation</title>
+  <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+  <style>
+    .wy-side-nav-search, .wy-nav-top { background: #1f5f5b; }
+    .wy-nav-content { max-width: 1040px; }
+    .wy-side-nav-search, .wy-nav-top { background: #195f5a; }
+    .wy-side-nav-search>a { font-size: 94%; line-height: 1.25; }
+    .wy-nav-content { max-width: 1120px; }
+    .rst-content h1 { color: #174f4b; margin-bottom: 12px; }
+    .rst-content h2 { color: #1f6e66; border-bottom: 1px solid #d9e8e5; padding-bottom: 4px; }
+    .docutils.literal { background: #f3f6f6; border: 1px solid #d9e2e1; padding: 1px 4px; }
+    .highlight pre { background: #f6f8fa; border: 1px solid #dfe6e5; padding: 12px; overflow-x: auto; border-radius: 6px; }
+    table.docutils { border-collapse: collapse; margin: 14px 0 20px; }
+    table.docutils td, table.docutils th { white-space: normal; vertical-align: top; padding: 9px 10px; }
+    table.docutils th { background: #edf5f3; color: #174f4b; }
+    .admonition.note { background: #eef7f5; border-left: 4px solid #1f7a70; padding: 10px 14px; margin: 18px 0; border-radius: 0 6px 6px 0; }
+    .doc-hero { background: linear-gradient(135deg, #eef7f5, #f8fbfb); border: 1px solid #d9e8e5; border-radius: 8px; padding: 22px 24px; margin: 0 0 22px; }
+    .doc-hero h1 { margin-top: 0; }
+    .status-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 18px 0 24px; }
+    .status-box { border: 1px solid #d9e8e5; border-radius: 8px; padding: 12px; background: #fff; }
+    .status-box span { display: block; color: #59706d; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .status-box strong { display: block; color: #174f4b; font-size: 20px; margin: 4px 0; }
+    .status-box small { color: #5d6866; }
+    .doc-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 18px 0 22px; }
+    .doc-card { border: 1px solid #dce8e6; border-radius: 8px; background: white; padding: 14px 16px; }
+    .doc-card h3 { margin: 0 0 6px; color: #174f4b; font-size: 16px; }
+    .doc-card p { margin: 0; color: #42504e; }
+    .ok-label { display: inline-block; background: #e7f5ee; color: #1b6a3a; border: 1px solid #bee4cc; border-radius: 999px; padding: 2px 8px; font-size: 12px; }
+  </style>
+</head>
+<body class="wy-body-for-nav">
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home">Nutrition Planner</a>
+          <div role="search">
+            <form class="wy-form" action="search.html" method="get">
+              <input type="text" name="q" placeholder="Cerca nella documentazione" aria-label="Cerca nella documentazione" />
+            </form>
+          </div>
+        </div>
+        <div class="wy-menu wy-menu-vertical" role="navigation" aria-label="Navigation menu">
+          <p class="caption" role="heading"><span class="caption-text">Contenuti:</span></p>
+          <ul class="current">
+            <li class="toctree-l1"><a class="reference internal" href="index.html">Panoramica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indice_originale.html">Indice originale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Moduli</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apprendimento_supervisionato.html">Apprendimento supervisionato</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apprendimento_probabilistico.html">Apprendimento probabilistico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kb.html">Knowledge Base Prolog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="nutrition_planner.html">nutrition_planner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="predict_models.html">predict_models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentazione.html">Documentazione</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+        <i class="fa fa-bars"></i>
+        <a href="index.html">Nutrition Planner</a>
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+            <ul class="wy-breadcrumbs">
+              <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+              <li class="breadcrumb-item active">nutrition_planner module</li>
+              <li class="wy-breadcrumbs-aside"><a href="_sources/nutrition_planner.rst.txt" rel="nofollow"> View page source</a></li>
+            </ul>
+            <hr/>
+          </div>
+          <div role="main" class="document">
+            <div itemprop="articleBody">
+              
+<section id="nutrition-planner">
+<h1>nutrition_planner module</h1>
+<p>Il modulo nutrition_planner.py e&#x27; la parte nuova del progetto: riceve dati fisici e composizione corporea, calcola il fabbisogno e genera un piano alimentare usando dataset/alimenti.csv.</p>
+<h2>Input gestiti</h2>
+<ul class="simple">
+<li><p>sesso, eta', peso e altezza;</p></li>
+<li><p>ore di allenamento settimanali;</p></li>
+<li><p>percentuale di massa grassa e massa magra;</p></li>
+<li><p>numero di giorni del piano, da 1 a 7;</p></li>
+<li><p>numero di alternative giornaliere, da 1 a 3 quando il piano e' di un solo giorno.</p></li>
+</ul>
+<h2>Calcoli principali</h2>
+<ul class="simple">
+<li><p>Massa magra stimata se l'utente inserisce 0.</p></li>
+<li><p>BMR calcolato con formula basata su massa magra.</p></li>
+<li><p>TDEE ottenuto applicando un fattore di attivita' alle ore di allenamento.</p></li>
+<li><p>Obiettivo alimentare inferito da sesso e massa grassa: definizione, mantenimento o ricomposizione.</p></li>
+<li><p>Macronutrienti giornalieri e grammature degli alimenti.</p></li>
+</ul>
+<h2>Modalita' di piano</h2>
+<table class="docutils align-default">
+<thead><tr class="row-odd"><th class="head"><p>Modalita&#x27;</p></th><th class="head"><p>Comportamento</p></th></tr></thead>
+<tbody><tr class="row-even"><td><p>Singolo giorno</p></td><td><p>Genera colazione, pranzo, spuntino e cena.</p></td></tr><tr class="row-even"><td><p>Alternative</p></td><td><p>Genera piu' risposte per lo stesso giorno usando varianti alimentari diverse.</p></td></tr><tr class="row-even"><td><p>Settimanale</p></td><td><p>Genera fino a 7 giorni, da Lunedi a Domenica, con alimenti variati.</p></td></tr></tbody>
+</table>
+<h2>Funzioni principali</h2>
+<table class="docutils align-default">
+<thead><tr class="row-odd"><th class="head"><p>Funzione</p></th><th class="head"><p>Descrizione</p></th></tr></thead>
+<tbody><tr class="row-even"><td><p>ask_int(prompt, min_value, max_value, allowed_values)</p></td><td><p>Richiede un intero e ripete la domanda finche' l'input non e' valido.</p></td></tr><tr class="row-even"><td><p>ask_float(prompt, min_value, max_value, allow_zero)</p></td><td><p>Richiede un numero decimale e ripete la domanda finche' l'input non e' valido.</p></td></tr><tr class="row-even"><td><p>calculate_bmr(sesso, eta, peso, altezza, massa_magra)</p></td><td><p>Calcola il metabolismo basale.</p></td></tr><tr class="row-even"><td><p>calculate_tdee(bmr, ore_allenamento)</p></td><td><p>Calcola il fabbisogno calorico giornaliero totale.</p></td></tr><tr class="row-even"><td><p>calculate_macros(peso, massa_magra, target_calories, goal)</p></td><td><p>Calcola i macronutrienti giornalieri.</p></td></tr><tr class="row-even"><td><p>generate_meal_plan(foods, target_calories, macros, variant_index)</p></td><td><p>Genera un piano alimentare giornaliero usando il dataset alimenti.</p></td></tr><tr class="row-even"><td><p>generate_daily_alternatives(foods, target_calories, macros, alternatives_count)</p></td><td><p>Genera piu' alternative giornaliere.</p></td></tr><tr class="row-even"><td><p>generate_weekly_meal_plan(foods, target_calories, macros, days)</p></td><td><p>Genera un piano alimentare settimanale o comunque multi-giorno.</p></td></tr><tr class="row-even"><td><p>print_meal_plan(goal, bmr, tdee, target_calories, macros, meal_plan, plan_days, alternatives_count)</p></td><td><p>Stampa il piano alimentare finale.</p></td></tr><tr class="row-even"><td><p>build_nutrition_plan(sesso, eta, peso, altezza, ore_allenamento, massa_grassa_pct, massa_magra_input, giorni_piano, alternative_giornaliere)</p></td><td><p>Costruisce i dati nutrizionali e il piano alimentare.</p></td></tr></tbody>
+</table>
+</section>
+
+            </div>
+          </div>
+          <footer>
+            <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+              <a href="kb.html" class="btn btn-neutral float-left" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+              <a href="predict_models.html" class="btn btn-neutral float-right" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+            </div>
+            <hr/>
+            <div role="contentinfo">
+              <p>&#169; Copyright 2026, Termine Christian Domenico. Documentazione aggiornata al 24 giugno 2026.</p>
+            </div>
+            Documentazione HTML statica basata sui sorgenti Sphinx del progetto.
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
