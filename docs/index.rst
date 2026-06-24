@@ -61,6 +61,13 @@ Per generare la documentazione HTML:
    python3 -m pip install -r requirements-docs.txt
    python3 -m sphinx -b html docs docs/_build/html
 
+Link GitHub
+-----------
+
+La documentazione Prolog della Knowledge Base e' disponibile anche online:
+
+``https://github.com/Christian032003/Nutrition-Planner/tree/main/kb/doc``
+
 .. toctree::
    :maxdepth: 2
    :caption: Contenuti:

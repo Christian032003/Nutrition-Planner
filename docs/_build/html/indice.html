@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dataset &mdash; Nutrition Planner 1.0.0 documentation</title>
+  <title>Indice dettagliato &mdash; Nutrition Planner 1.0.0 documentation</title>
   <link rel="stylesheet" type="text/css" href="_static/basic.css" />
   <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
   <style>
@@ -50,11 +50,11 @@
           <p class="caption" role="heading"><span class="caption-text">Contenuti:</span></p>
           <ul class="current">
             <li class="toctree-l1"><a class="reference internal" href="index.html">Panoramica</a></li>
-<li class="toctree-l1"><a class="reference internal" href="indice.html">Indice dettagliato</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="indice.html">Indice dettagliato</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Moduli</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apprendimento_supervisionato.html">Apprendimento supervisionato</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apprendimento_probabilistico.html">Apprendimento probabilistico</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Dataset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kb.html">Knowledge Base Prolog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="nutrition_planner.html">nutrition_planner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="predict_models.html">predict_models</a></li>
@@ -73,39 +73,33 @@
           <div role="navigation" aria-label="Page navigation">
             <ul class="wy-breadcrumbs">
               <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-              <li class="breadcrumb-item active">Dataset</li>
-              <li class="wy-breadcrumbs-aside"><a href="_sources/dataset.rst.txt" rel="nofollow"> View page source</a></li>
+              <li class="breadcrumb-item active">Indice dettagliato</li>
+              <li class="wy-breadcrumbs-aside"><a href="_sources/indice.rst.txt" rel="nofollow"> View page source</a></li>
             </ul>
             <hr/>
           </div>
           <div role="main" class="document">
             <div itemprop="articleBody">
               
-<section id="dataset">
-<h1>Dataset</h1>
-<p>Il progetto usa due dataset: uno per il machine learning sulle calorie bruciate e uno per costruire i piani alimentari.</p>
+<section id="indice-dettagliato">
+<h1>Indice dettagliato del progetto</h1>
+<p>Questa pagina organizza la documentazione di Nutrition Planner per area funzionale, così il docente può consultare rapidamente codice, dataset, modelli, Knowledge Base e piano alimentare.</p>
 <table class="docutils align-default">
-<thead><tr class="row-odd"><th class="head"><p>Dataset</p></th><th class="head"><p>Descrizione</p></th></tr></thead>
-<tbody><tr class="row-even"><td><p>gym_members_exercise_tracking.csv</p></td><td><p>Dataset di allenamento usato per addestrare i modelli predittivi delle calorie bruciate.</p></td></tr><tr class="row-even"><td><p>alimenti.csv</p></td><td><p>Dataset alimentare aggiornato con 35 alimenti e categorie: carboidrato, grasso, misto, proteina, verdura.</p></td></tr></tbody>
+<thead><tr class="row-odd"><th class="head"><p>Sezione</p></th><th class="head"><p>Contenuto</p></th><th class="head"><p>Riferimento</p></th></tr></thead>
+<tbody><tr class="row-even"><td><p>1. Introduzione</p></td><td><p>Obiettivo, contesto applicativo, componenti software e output attesi.</p></td><td><p>documentazione.pdf</p></td></tr><tr class="row-even"><td><p>2. Dataset</p></td><td><p>Dataset allenamento, dataset alimentare, colonne principali e controlli di coerenza.</p></td><td><p>dataset.html</p></td></tr><tr class="row-even"><td><p>3. Apprendimento supervisionato</p></td><td><p>Training, scaler, mapping workout, Linear Regression, Random Forest, Gradient Boosting e grafici.</p></td><td><p>apprendimento_supervisionato.html</p></td></tr><tr class="row-even"><td><p>4. Apprendimento probabilistico</p></td><td><p>Bayesian Ridge, intervallo di confidenza, metriche e modello scartato.</p></td><td><p>apprendimento_probabilistico.html</p></td></tr><tr class="row-even"><td><p>5. Knowledge Base Prolog</p></td><td><p>Regole per workout, intensita', durata ottimale e documentazione pubblicata su GitHub.</p></td><td><p><a class="reference external" href="https://github.com/Christian032003/Nutrition-Planner/tree/main/kb/doc">kb/doc su GitHub</a></p></td></tr><tr class="row-even"><td><p>6. Modulo principale</p></td><td><p>Caricamento modelli, input validati, query Prolog, predizioni e collegamento al planner.</p></td><td><p>predict_models.html</p></td></tr><tr class="row-even"><td><p>7. Planner alimentare</p></td><td><p>BMR, TDEE, obiettivo, macronutrienti, pasti, alternative e piano settimanale.</p></td><td><p>nutrition_planner.html</p></td></tr><tr class="row-even"><td><p>8. Documentazione e uso</p></td><td><p>PDF, HTML, comandi di esecuzione, aggiornamento grafici e repository GitHub.</p></td><td><p>documentazione.html</p></td></tr></tbody>
 </table>
-<h2>Struttura di alimenti.csv</h2>
-<div class="highlight"><pre>alimento,categoria,pasti,kcal_100g,proteine_100g,carboidrati_100g,grassi_100g</pre></div>
-<p>Il campo pasti puo&#x27; contenere piu&#x27; valori separati da |, ad esempio colazione|spuntino o pranzo|cena. Questo permette al planner di scegliere alimenti compatibili con il pasto richiesto.</p>
-<h2>Cosa e' stato aggiornato</h2>
-<ul class="simple">
-<li><p>Aggiunte alternative proteiche come skyr, tacchino, merluzzo, bresaola e lenticchie cotte.</p></li>
-<li><p>Aggiunte fonti di carboidrati e frutta come quinoa, farro, riso venere, kiwi e arancia.</p></li>
-<li><p>Aggiunti grassi e verdure per bilanciare grammature e micronutrienti.</p></li>
-<li><p>Il dataset alimentare serve solo alla generazione del piano; i grafici dei modelli si aggiornano rilanciando i training.</p></li>
-</ul>
+<div class="admonition note">
+  <p class="admonition-title">Sintesi</p>
+  <p>L'indice segue il flusso reale del progetto: dai dati di input alla stima delle calorie, fino alla generazione del piano alimentare e alla documentazione consultabile online.</p>
+</div>
 </section>
 
             </div>
           </div>
           <footer>
             <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-              <a href="apprendimento_probabilistico.html" class="btn btn-neutral float-left" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-              <a href="kb.html" class="btn btn-neutral float-right" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+              <a href="index.html" class="btn btn-neutral float-left" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+              <a href="modules.html" class="btn btn-neutral float-right" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
             </div>
             <hr/>
             <div role="contentinfo">
